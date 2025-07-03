@@ -1,0 +1,512 @@
+[22:26:26:146896][2589740][DOCA][INF][rdma_write_responder_my.c:133][rdma_write_responder_my] Starting the sample
+[22:26:26:146986][2589740][DOCA][INF][rdma_write_responder_my.c:135][rdma_write_responder_my] [初始化 rdma           ] 用时: 0.11 ms
+[22:26:26:148645][2589741][DOCA][INF][rdma_write_responder_my.c:133][rdma_write_responder_my] Starting the sample
+[22:26:26:148693][2589741][DOCA][INF][rdma_write_responder_my.c:135][rdma_write_responder_my] [初始化 rdma           ] 用时: 0.06 ms
+[22:26:26:152040][2589738][DOCA][INF][rdma_write_responder_my.c:133][rdma_write_responder_my] Starting the sample
+[22:26:26:152084][2589738][DOCA][INF][rdma_write_responder_my.c:135][rdma_write_responder_my] [初始化 rdma           ] 用时: 0.05 ms
+[22:26:26:155809][2589739][DOCA][INF][rdma_write_responder_my.c:133][rdma_write_responder_my] Starting the sample
+[22:26:26:155853][2589739][DOCA][INF][rdma_write_responder_my.c:135][rdma_write_responder_my] [初始化 rdma           ] 用时: 0.05 ms
+[22:27:15:635168][2589738][DOCA][INF][doca_dev.cpp:618][doca_devinfo_create_list] Devinfo list 0x1cb683c8: Added device=0x1cb51090 to devinfo list
+[22:27:15:635246][2589738][DOCA][INF][doca_dev.cpp:618][doca_devinfo_create_list] Devinfo list 0x1cb683c8: Added device=0x1cb68540 to devinfo list
+[22:27:15:635254][2589738][DOCA][INF][doca_dev.cpp:627][doca_devinfo_create_list] Devinfo list 0x1cb683c8 was created
+[22:27:15:642400][2589738][DOCA][INF][doca_dev.cpp:997][doca_dev_open] Local device 0x1cb51090 was opened
+[22:27:15:642438][2589738][DOCA][INF][doca_dev.cpp:143][dev_put] Device 0x1cb68540 was destroyed
+[22:27:15:642454][2589738][DOCA][INF][doca_dev.cpp:708][doca_devinfo_destroy_list] Devinfo list 0x1cb683c8 was destroyed
+[22:27:15:642476][2589738][DOCA][INF][doca_mmap.cpp:695][doca_mmap_create] Mmap 0x1cb68940 was created, access_mask=0x1
+[22:27:15:642486][2589738][DOCA][INF][doca_mmap.cpp:2271][doca_mmap_set_permissions] Mmap 0x1cb68940: Set permissions with access_mask=0x5
+[22:27:15:642495][2589738][DOCA][WRN][doca_mmap.cpp:2026][mmap_set_memrange] Mmap 0x1cb68940: Memory range isn't aligned to 64B - addr=0x7db0e81fe010. For best performance using CPU memory, align address to 64B (cache-line size). For best performance using GPU memory, align address to 64KB (page size)
+[22:27:15:642504][2589738][DOCA][INF][doca_mmap.cpp:2036][mmap_set_memrange] Mmap 0x1cb68940: Set memrange addr=0x7db0e81fe010, len=104857600
+[22:27:15:642515][2589738][DOCA][DBG][doca_mmap.cpp:1010][mmap_add_dev] Mmap 0x1cb68940: Added device=0x1cb51090 to mmap. curr_device_num=1
+[22:27:15:687675][2589738][DOCA][DBG][linux_devx_obj.cpp:80][priv_doca_devx_object] DEVX obj 0x1cb683c0 created (m_devx_object=0x1cb68ae0)
+[22:27:15:687785][2589738][DOCA][INF][doca_mmap.cpp:893][doca_mmap_start] Mmap 0x1cb68940: mmap was started
+[22:27:15:687821][2589738][DOCA][INF][doca_pe.cpp:47][doca_pe_create] Progress engine 0x1cb69500 was created
+[22:27:15:690703][2589738][DOCA][DBG][priv_doca_rdma.cpp:356][priv_doca_rdma_get_max_send_data_segs] devinfo 0x1cb510f0: max_send_data_segs=64 for transport_type=RC
+[22:27:15:691900][2589738][DOCA][DBG][priv_doca_rdma.cpp:356][priv_doca_rdma_get_max_send_data_segs] devinfo 0x1cb510f0: max_send_data_segs=16 for transport_type=DC
+[22:27:15:693162][2589738][DOCA][DBG][priv_doca_rdma.cpp:315][priv_doca_rdma_get_max_recv_data_segs] devinfo 0x1cb510f0: max_recv_data_segs=32
+[22:27:15:696724][2589738][DOCA][INF][doca_rdma.cpp:262][doca_rdma_create] RDMA=0x7db0e817d010 was created, dev=0x1cb51090
+[22:27:15:696786][2589738][DOCA][INF][doca_rdma.cpp:1693][doca_rdma_set_permissions] RDMA 0x7db0e817d010: permissions were set to 0x5
+[22:27:15:696808][2589738][DOCA][INF][doca_rdma.cpp:1850][doca_rdma_set_max_num_connections] RDMA 0x7db0e817d010: maximum number of connections was set to 1
+[22:27:15:697976][2589738][DOCA][DBG][doca_rdma.cpp:1443][doca_rdma_cap_transport_type_is_supported] devinfo 0x1cb510f0: transport_type=RC is supported
+[22:27:15:698041][2589738][DOCA][INF][doca_rdma.cpp:1593][doca_rdma_set_transport_type] RDMA 0x7db0e817d010: transport_type was set to RC
+Server waiting for client connection on port 18600...
+Client connected from 192.168.200.1:43140
+TCP_NODELAY is enabled
+[22:27:15:698085][2589738][DOCA][INF][rdma_common.c:1748][config_rdma_cm_callback_and_negotiation_task] 成功执行到这里，config_rdma_cm_callback_and_negotiation_task
+[22:27:15:698109][2589738][DOCA][INF][rdma_tasks.cpp:181][priv_set_task_conf] RDMA 0x7db0e817d010: task_send_task number of tasks was set to 1
+[22:27:15:698129][2589738][DOCA][INF][doca_rdma.cpp:2276][doca_rdma_set_connection_state_callbacks] RDMA 0x7db0e817d010: Connection callbacks were set
+[22:27:15:698434][2589738][DOCA][INF][task_pool.cpp:34][priv_doca_task_pool_create] task_pool 0x1cb68b60 was created
+[22:27:15:698460][2589738][DOCA][INF][task_pool.cpp:34][priv_doca_task_pool_create] task_pool 0x1cb648d0 was created
+[22:27:15:698477][2589738][DOCA][INF][task_pool.cpp:34][priv_doca_task_pool_create] task_pool 0x1cb68c20 was created
+[22:27:15:698493][2589738][DOCA][INF][task_pool.cpp:34][priv_doca_task_pool_create] task_pool 0x1cb68f20 was created
+[22:27:15:698508][2589738][DOCA][INF][task_pool.cpp:34][priv_doca_task_pool_create] task_pool 0x1cb6a6c0 was created
+[22:27:15:698524][2589738][DOCA][INF][task_pool.cpp:34][priv_doca_task_pool_create] task_pool 0x1cb6a760 was created
+[22:27:15:698540][2589738][DOCA][INF][task_pool.cpp:34][priv_doca_task_pool_create] task_pool 0x1cb6a800 was created
+[22:27:15:698555][2589738][DOCA][INF][task_pool.cpp:34][priv_doca_task_pool_create] task_pool 0x1cb6a8a0 was created
+[22:27:15:698572][2589738][DOCA][INF][task_pool.cpp:34][priv_doca_task_pool_create] task_pool 0x1cb6a940 was created
+[22:27:15:698588][2589738][DOCA][INF][task_pool.cpp:34][priv_doca_task_pool_create] task_pool 0x1cb6a9e0 was created
+[22:27:15:698603][2589738][DOCA][INF][task_pool.cpp:34][priv_doca_task_pool_create] task_pool 0x1cb6aa80 was created
+[22:27:15:698987][2589738][DOCA][INF][doca_uar.cpp:232][bridge_init] UAR 0x1cb6ab40 created: page=0x7db16febf000, reg_addr=0x7db16febf800, base_addr=0x7db16febf000, id=131, alloc_type=BLUEFLAME
+[22:27:15:700103][2589738][DOCA][DBG][linux_devx_obj.cpp:80][priv_doca_devx_object] DEVX obj 0x1cb68db0 created (m_devx_object=0x1cb68bc0)
+[22:27:15:700158][2589738][DOCA][INF][doca_pe.cpp:665][priv_doca_pe_cq_register] Progress engine 0x1cb69500: cq=0x1cb6ad40 was registered to pe
+[22:27:15:700178][2589738][DOCA][INF][rdma_write_responder_sample.c:339][rdma_write_responder_state_change_callback] RDMA context is running
+[22:27:15:700188][2589738][DOCA][INF][rdma_common.c:1184][rdma_cm_connect] Using RDMA_CM to setup RDMA connection
+[22:27:15:700197][2589738][DOCA][INF][rdma_common.c:1204][rdma_cm_connect] -----------------------------------------------
+[22:27:15:700204][2589738][DOCA][INF][rdma_common.c:1205][rdma_cm_connect] RDMA_CM connection params:
+[22:27:15:700210][2589738][DOCA][INF][rdma_common.c:1206][rdma_cm_connect] -- Connection Role: Server
+[22:27:15:700217][2589738][DOCA][INF][rdma_common.c:1207][rdma_cm_connect] -- Addr_type : 0
+[22:27:15:700224][2589738][DOCA][INF][rdma_common.c:1208][rdma_cm_connect] -- Addr: NULL
+[22:27:15:700231][2589738][DOCA][INF][rdma_common.c:1209][rdma_cm_connect] -- Port: 13580
+[22:27:15:700239][2589738][DOCA][INF][rdma_common.c:1210][rdma_cm_connect] -- Num_connections: 1
+[22:27:15:700248][2589738][DOCA][INF][rdma_common.c:1211][rdma_cm_connect] -----------------------------------------------
+[22:27:15:700256][2589738][DOCA][INF][rdma_common.c:1219][rdma_cm_connect] Server calling doca_rdma_start_listen_to_port
+[22:27:15:700263][2589738][DOCA][INF][rdma_common.c:1220][rdma_cm_connect] rdma 的值为: 0x7db0e817d010
+[22:27:15:700270][2589738][DOCA][INF][rdma_common.c:1221][rdma_cm_connect] cm_port 的值为: 13580
+[22:27:15:700320][2589738][DOCA][INF][rdma_common.c:1251][rdma_cm_connect] [Server] started connection successfully
+[22:27:15:700328][2589738][DOCA][INF][rdma_write_responder_sample.c:347][rdma_write_responder_state_change_callback] RDMA context finished initialization
+[22:27:15:700336][2589738][DOCA][INF][rdma_write_responder_sample.c:456][rdma_write_responder] remote_mmap_descriptor= (nil) remote_mmap=(nil)
+[22:27:15:815672][2589738][DOCA][DBG][linux_devx_obj.cpp:80][priv_doca_devx_object] DEVX obj 0x1cb6ae40 created (m_devx_object=0x1cb7c010)
+[22:27:15:816609][2589738][DOCA][DBG][doca_qp.cpp:1097][set_state] QP 0x1cb68b40: State is already INIT
+[22:27:15:816649][2589738][DOCA][INF][doca_qp.cpp:1128][priv_doca_dev_qp_create] Device 0x1cb51090: qp=0x1cb68b40 was created
+[22:27:15:816990][2589738][DOCA][INF][doca_rdma.cpp:570][doca_rdma_addr_create] RDMA address 0x1cb6b420: Connection was set to Address (IPv4): 192.168.200.1 and Port 57012
+[22:27:15:817029][2589738][DOCA][INF][rdma_common.c:1573][rdma_cm_connect_request_cb] RDMA 连接请求被收到
+[22:27:15:822650][2589738][DOCA][INF][doca_qp.cpp:1090][set_state] QP 0x1cb68b40: State change INIT -> CONNECTED
+[22:27:15:922826][2589738][DOCA][INF][rdma_common.c:1406][rdma_responder_send_data_to_rdma_requester] Start to exchange data resource between client and server
+[22:27:15:922977][2589738][DOCA][INF][doca_buf_inventory.cpp:238][expand_imp] Buf inventory 0x1cb94880: Expanded by 16 elements (num free elements=16, num elements=16)
+[22:27:15:923031][2589738][DOCA][INF][doca_buf_inventory.cpp:256][doca_buf_inventory] DOCA buf inventory 0x1cb94880 was created
+[22:27:15:923070][2589738][DOCA][INF][doca_buf_inventory.cpp:418][start] Buf inventory 0x1cb94880: was started (num_elements=16)
+[22:27:15:923110][2589738][DOCA][INF][doca_mmap.cpp:695][doca_mmap_create] Mmap 0x1cb97f80 was created, access_mask=0x1
+[22:27:15:923156][2589738][DOCA][INF][doca_mmap.cpp:2271][doca_mmap_set_permissions] Mmap 0x1cb97f80: Set permissions with access_mask=0x1
+[22:27:15:923196][2589738][DOCA][INF][doca_mmap.cpp:2036][mmap_set_memrange] Mmap 0x1cb97f80: Set memrange addr=0x1cb69c40, len=128
+[22:27:15:923243][2589738][DOCA][DBG][doca_mmap.cpp:1010][mmap_add_dev] Mmap 0x1cb97f80: Added device=0x1cb51090 to mmap. curr_device_num=1
+[22:27:15:924096][2589738][DOCA][DBG][linux_devx_obj.cpp:80][priv_doca_devx_object] DEVX obj 0x1cb94390 created (m_devx_object=0x1cb94460)
+[22:27:15:924154][2589738][DOCA][INF][doca_mmap.cpp:893][doca_mmap_start] Mmap 0x1cb97f80: mmap was started
+[22:27:15:924200][2589738][DOCA][INF][rdma_common.c:1463][rdma_responder_send_data_to_rdma_requester] Wait till the requester has finished the submission of the receive task for negotiation and press enter
+[22:27:15:924252][2589738][DOCA][INF][rdma_common.c:1468][rdma_responder_send_data_to_rdma_requester] [等待元数据交换控制信息耗时：] 用时: 0.03 ms
+[22:27:15:924368][2589738][DOCA][INF][rdma_write_responder_sample.c:220][responder_wait_for_requester_finish_chunked] 开始接收分块数据
+[22:27:15:924391][2589738][DOCA][INF][rdma_write_responder_sample.c:232][responder_wait_for_requester_finish_chunked] 等待第 1 块数据
+[22:27:15:968249][2589738][DOCA][INF][rdma_write_responder_sample.c:236][responder_wait_for_requester_finish_chunked] [等待 块数据 耗时  ] 用时: 43.84 ms
+[22:27:15:968316][2589738][DOCA][INF][rdma_write_responder_sample.c:237][responder_wait_for_requester_finish_chunked] 收到写完成信号
+[22:27:15:968332][2589738][DOCA][INF][rdma_write_responder_sample.c:244][responder_wait_for_requester_finish_chunked] 接收到块 1/1，数据大小: 46830571，总数据: 46830571，是否最后: 1
+[22:27:15:968346][2589738][DOCA][INF][rdma_write_responder_sample.c:252][responder_wait_for_requester_finish_chunked] 预计接收 1 块，总大小 46830571 字节
+[22:27:16:029686][2589738][DOCA][INF][rdma_write_responder_sample.c:270][responder_wait_for_requester_finish_chunked] [读取 块数据 耗时  ] 用时: 61.35 ms
+[22:27:16:029729][2589738][DOCA][INF][rdma_write_responder_sample.c:271][responder_wait_for_requester_finish_chunked] 已接收 1/1 块，累计数据: 46830571 字节
+[22:27:16:029778][2589738][DOCA][INF][rdma_write_responder_sample.c:277][responder_wait_for_requester_finish_chunked] 已发送第 1 块的 ACK
+[22:27:16:029787][2589738][DOCA][INF][rdma_write_responder_sample.c:281][responder_wait_for_requester_finish_chunked] 接收完成，总共 1 块，46830571 字节
+[22:27:16:029807][2589738][DOCA][INF][rdma_write_responder_sample.c:286][responder_wait_for_requester_finish_chunked] [分块接收总耗时    ] 用时: 105.42 ms
+[22:27:16:029817][2589738][DOCA][INF][rdma_write_responder_sample.c:290][responder_wait_for_requester_finish_chunked] ✓ 数据接收完整: 46830571 字节
+[22:27:16:029825][2589738][DOCA][INF][rdma_write_responder_sample.c:299][responder_wait_for_requester_finish_chunked] 最终接收数据大小: 46830571
+[22:27:16:030343][2589738][DOCA][DBG][doca_qp.cpp:1097][set_state] QP 0x1cb68b40: State is already CONNECTED
+[22:27:16:032342][2589738][DOCA][INF][doca_qp.cpp:1090][set_state] QP 0x1cb68b40: State change CONNECTED -> INIT
+[22:27:16:032422][2589738][DOCA][DBG][doca_qp.cpp:1097][set_state] QP 0x1cb68b40: State is already INIT
+[22:27:16:032480][2589738][DOCA][INF][doca_rdma.cpp:601][doca_rdma_addr_destroy] RDMA address 0x1cb6b420: RDMA address was destroyed
+[22:27:16:033121][2589738][DOCA][INF][doca_qp.cpp:1141][priv_doca_dev_qp_destroy] Destroying qp=0x1cb68b40
+[22:27:16:035260][2589738][DOCA][INF][rdma_common.c:1269][rdma_cm_disconnect] [Server] successfully disconnect rdma-cm connection
+[22:27:16:035286][2589738][DOCA][INF][doca_ctx.cpp:85][ctx_pe_stop] CTX 0x7db0e817d010: Can't immediately stop from a context of a callback
+[22:27:16:035317][2589738][DOCA][INF][rdma_write_responder_sample.c:362][rdma_write_responder_state_change_callback] RDMA context entered into stopping state. Any inflight tasks will be flushed
+[22:27:16:035334][2589738][DOCA][INF][rdma_ctx_cpu.cpp:1441][priv_doca_rdma_ctx_progress_stopping] num in-flight tasks has reached 0, RDMA can be stopped
+[22:27:16:035781][2589738][DOCA][INF][task_pool.cpp:54][priv_doca_task_pool_destroy] task_pool 0x1cb68b60 was destroyed
+[22:27:16:035812][2589738][DOCA][INF][task_pool.cpp:54][priv_doca_task_pool_destroy] task_pool 0x1cb648d0 was destroyed
+[22:27:16:035839][2589738][DOCA][INF][task_pool.cpp:54][priv_doca_task_pool_destroy] task_pool 0x1cb68c20 was destroyed
+[22:27:16:035864][2589738][DOCA][INF][task_pool.cpp:54][priv_doca_task_pool_destroy] task_pool 0x1cb68f20 was destroyed
+[22:27:16:035890][2589738][DOCA][INF][task_pool.cpp:54][priv_doca_task_pool_destroy] task_pool 0x1cb6a6c0 was destroyed
+[22:27:16:035916][2589738][DOCA][INF][task_pool.cpp:54][priv_doca_task_pool_destroy] task_pool 0x1cb6a760 was destroyed
+[22:27:16:035952][2589738][DOCA][INF][task_pool.cpp:54][priv_doca_task_pool_destroy] task_pool 0x1cb6a800 was destroyed
+[22:27:16:035977][2589738][DOCA][INF][task_pool.cpp:54][priv_doca_task_pool_destroy] task_pool 0x1cb6a8a0 was destroyed
+[22:27:16:036002][2589738][DOCA][INF][task_pool.cpp:54][priv_doca_task_pool_destroy] task_pool 0x1cb6a940 was destroyed
+[22:27:16:036028][2589738][DOCA][INF][task_pool.cpp:54][priv_doca_task_pool_destroy] task_pool 0x1cb6a9e0 was destroyed
+[22:27:16:036054][2589738][DOCA][INF][task_pool.cpp:54][priv_doca_task_pool_destroy] task_pool 0x1cb6aa80 was destroyed
+[22:27:16:036103][2589738][DOCA][INF][doca_pe.cpp:693][priv_doca_pe_cq_unregister] Progress engine 0x1cb69500: cq=0x1cb6ad40 was unregistered from pe
+[22:27:16:036817][2589738][DOCA][INF][rdma_write_responder_sample.c:365][rdma_write_responder_state_change_callback] RDMA context has been stopped
+[22:27:16:036833][2589738][DOCA][INF][doca_ctx.cpp:650][priv_doca_ctx_set_state_to_idle] CTX 0x7db0e817d010 has successfully stopped
+[22:27:16:050189][2589738][DOCA][INF][doca_buf_inventory.cpp:435][stop] Buf inventory 0x1cb94880: was stopped
+[22:27:16:050242][2589738][DOCA][INF][doca_mmap.cpp:713][doca_mmap_destroy] Mmap 0x1cb97f80: Destroying mmap
+[22:27:16:050879][2589738][DOCA][INF][doca_mmap.cpp:668][mmap_stop] Mmap 0x1cb97f80: mmap was stopped
+[22:27:16:050912][2589738][DOCA][INF][doca_pe.cpp:115][priv_doca_pe_ctx_destroy] Destroying progress engine ctx=0x7db0e817d010
+[22:27:16:050958][2589738][DOCA][INF][doca_rdma.cpp:307][doca_rdma_destroy] RDMA 0x7db0e817d010: RDMA was destroyed
+[22:27:16:051015][2589738][DOCA][INF][doca_pe.cpp:61][doca_pe_destroy] Progress engine 0x1cb69500: Destroying progress engine
+[22:27:16:051075][2589738][DOCA][INF][doca_pe.cpp:1263][destroy] Progress engine 0x1cb69500 was destroyed
+[22:27:16:056838][2589738][DOCA][INF][doca_mmap.cpp:668][mmap_stop] Mmap 0x1cb68940: mmap was stopped
+[22:27:16:068745][2589738][DOCA][INF][doca_mmap.cpp:713][doca_mmap_destroy] Mmap 0x1cb68940: Destroying mmap
+[22:27:16:073807][2589738][DOCA][INF][doca_dev.cpp:143][dev_put] Device 0x1cb51090 was destroyed
+[22:27:16:073847][2589738][DOCA][INF][doca_dev.cpp:1012][doca_dev_close] Local device 0x1cb51090 was closed
+[22:27:16:073896][2589738][DOCA][ERR][doca_argp.cpp:2532][doca_argp_destroy] Module is not ready for use
+[22:27:16:073926][2589738][DOCA][INF][rdma_write_responder_my.c:151][rdma_write_responder_my] Sample finished successfully
+[22:27:16:087381][2589739][DOCA][INF][doca_dev.cpp:618][doca_devinfo_create_list] Devinfo list 0x3ae6f3c8: Added device=0x3ae58090 to devinfo list
+[22:27:16:087412][2589739][DOCA][INF][doca_dev.cpp:618][doca_devinfo_create_list] Devinfo list 0x3ae6f3c8: Added device=0x3ae6f540 to devinfo list
+[22:27:16:087419][2589739][DOCA][INF][doca_dev.cpp:627][doca_devinfo_create_list] Devinfo list 0x3ae6f3c8 was created
+[22:27:16:096794][2589739][DOCA][INF][doca_dev.cpp:997][doca_dev_open] Local device 0x3ae58090 was opened
+[22:27:16:096826][2589739][DOCA][INF][doca_dev.cpp:143][dev_put] Device 0x3ae6f540 was destroyed
+[22:27:16:096840][2589739][DOCA][INF][doca_dev.cpp:708][doca_devinfo_destroy_list] Devinfo list 0x3ae6f3c8 was destroyed
+[22:27:16:096859][2589739][DOCA][INF][doca_mmap.cpp:695][doca_mmap_create] Mmap 0x3ae6f940 was created, access_mask=0x1
+[22:27:16:096868][2589739][DOCA][INF][doca_mmap.cpp:2271][doca_mmap_set_permissions] Mmap 0x3ae6f940: Set permissions with access_mask=0x5
+[22:27:16:096876][2589739][DOCA][WRN][doca_mmap.cpp:2026][mmap_set_memrange] Mmap 0x3ae6f940: Memory range isn't aligned to 64B - addr=0x790390dfe010. For best performance using CPU memory, align address to 64B (cache-line size). For best performance using GPU memory, align address to 64KB (page size)
+[22:27:16:096883][2589739][DOCA][INF][doca_mmap.cpp:2036][mmap_set_memrange] Mmap 0x3ae6f940: Set memrange addr=0x790390dfe010, len=209715200
+[22:27:16:096892][2589739][DOCA][DBG][doca_mmap.cpp:1010][mmap_add_dev] Mmap 0x3ae6f940: Added device=0x3ae58090 to mmap. curr_device_num=1
+[22:27:16:184989][2589739][DOCA][DBG][linux_devx_obj.cpp:80][priv_doca_devx_object] DEVX obj 0x3ae6f3c0 created (m_devx_object=0x3ae6fae0)
+[22:27:16:185094][2589739][DOCA][INF][doca_mmap.cpp:893][doca_mmap_start] Mmap 0x3ae6f940: mmap was started
+[22:27:16:185123][2589739][DOCA][INF][doca_pe.cpp:47][doca_pe_create] Progress engine 0x3ae70500 was created
+[22:27:16:187958][2589739][DOCA][DBG][priv_doca_rdma.cpp:356][priv_doca_rdma_get_max_send_data_segs] devinfo 0x3ae580f0: max_send_data_segs=64 for transport_type=RC
+[22:27:16:189134][2589739][DOCA][DBG][priv_doca_rdma.cpp:356][priv_doca_rdma_get_max_send_data_segs] devinfo 0x3ae580f0: max_send_data_segs=16 for transport_type=DC
+[22:27:16:190296][2589739][DOCA][DBG][priv_doca_rdma.cpp:315][priv_doca_rdma_get_max_recv_data_segs] devinfo 0x3ae580f0: max_recv_data_segs=32
+[22:27:16:193733][2589739][DOCA][INF][doca_rdma.cpp:262][doca_rdma_create] RDMA=0x790390d7d010 was created, dev=0x3ae58090
+[22:27:16:193781][2589739][DOCA][INF][doca_rdma.cpp:1693][doca_rdma_set_permissions] RDMA 0x790390d7d010: permissions were set to 0x5
+[22:27:16:193796][2589739][DOCA][INF][doca_rdma.cpp:1850][doca_rdma_set_max_num_connections] RDMA 0x790390d7d010: maximum number of connections was set to 1
+[22:27:16:194843][2589739][DOCA][DBG][doca_rdma.cpp:1443][doca_rdma_cap_transport_type_is_supported] devinfo 0x3ae580f0: transport_type=RC is supported
+[22:27:16:194861][2589739][DOCA][INF][doca_rdma.cpp:1593][doca_rdma_set_transport_type] RDMA 0x790390d7d010: transport_type was set to RC
+Server waiting for client connection on port 18601...
+Client connected from 192.168.200.1:47356
+TCP_NODELAY is enabled
+[22:27:16:194877][2589739][DOCA][INF][rdma_common.c:1748][config_rdma_cm_callback_and_negotiation_task] 成功执行到这里，config_rdma_cm_callback_and_negotiation_task
+[22:27:16:194914][2589739][DOCA][INF][rdma_tasks.cpp:181][priv_set_task_conf] RDMA 0x790390d7d010: task_send_task number of tasks was set to 1
+[22:27:16:194941][2589739][DOCA][INF][doca_rdma.cpp:2276][doca_rdma_set_connection_state_callbacks] RDMA 0x790390d7d010: Connection callbacks were set
+[22:27:16:195214][2589739][DOCA][INF][task_pool.cpp:34][priv_doca_task_pool_create] task_pool 0x3ae6fb60 was created
+[22:27:16:195234][2589739][DOCA][INF][task_pool.cpp:34][priv_doca_task_pool_create] task_pool 0x3ae6b8d0 was created
+[22:27:16:195246][2589739][DOCA][INF][task_pool.cpp:34][priv_doca_task_pool_create] task_pool 0x3ae6fc20 was created
+[22:27:16:195259][2589739][DOCA][INF][task_pool.cpp:34][priv_doca_task_pool_create] task_pool 0x3ae6ff20 was created
+[22:27:16:195271][2589739][DOCA][INF][task_pool.cpp:34][priv_doca_task_pool_create] task_pool 0x3ae716c0 was created
+[22:27:16:195283][2589739][DOCA][INF][task_pool.cpp:34][priv_doca_task_pool_create] task_pool 0x3ae71760 was created
+[22:27:16:195295][2589739][DOCA][INF][task_pool.cpp:34][priv_doca_task_pool_create] task_pool 0x3ae71800 was created
+[22:27:16:195307][2589739][DOCA][INF][task_pool.cpp:34][priv_doca_task_pool_create] task_pool 0x3ae718a0 was created
+[22:27:16:195319][2589739][DOCA][INF][task_pool.cpp:34][priv_doca_task_pool_create] task_pool 0x3ae71940 was created
+[22:27:16:195330][2589739][DOCA][INF][task_pool.cpp:34][priv_doca_task_pool_create] task_pool 0x3ae719e0 was created
+[22:27:16:195342][2589739][DOCA][INF][task_pool.cpp:34][priv_doca_task_pool_create] task_pool 0x3ae71a80 was created
+[22:27:16:195645][2589739][DOCA][INF][doca_uar.cpp:232][bridge_init] UAR 0x3ae71b40 created: page=0x79041eee2000, reg_addr=0x79041eee2800, base_addr=0x79041eee2000, id=131, alloc_type=BLUEFLAME
+[22:27:16:196533][2589739][DOCA][DBG][linux_devx_obj.cpp:80][priv_doca_devx_object] DEVX obj 0x3ae6fdb0 created (m_devx_object=0x3ae6fbc0)
+[22:27:16:196582][2589739][DOCA][INF][doca_pe.cpp:665][priv_doca_pe_cq_register] Progress engine 0x3ae70500: cq=0x3ae71d40 was registered to pe
+[22:27:16:196597][2589739][DOCA][INF][rdma_write_responder_sample.c:339][rdma_write_responder_state_change_callback] RDMA context is running
+[22:27:16:196606][2589739][DOCA][INF][rdma_common.c:1184][rdma_cm_connect] Using RDMA_CM to setup RDMA connection
+[22:27:16:196612][2589739][DOCA][INF][rdma_common.c:1204][rdma_cm_connect] -----------------------------------------------
+[22:27:16:196618][2589739][DOCA][INF][rdma_common.c:1205][rdma_cm_connect] RDMA_CM connection params:
+[22:27:16:196624][2589739][DOCA][INF][rdma_common.c:1206][rdma_cm_connect] -- Connection Role: Server
+[22:27:16:196630][2589739][DOCA][INF][rdma_common.c:1207][rdma_cm_connect] -- Addr_type : 0
+[22:27:16:196636][2589739][DOCA][INF][rdma_common.c:1208][rdma_cm_connect] -- Addr: NULL
+[22:27:16:196642][2589739][DOCA][INF][rdma_common.c:1209][rdma_cm_connect] -- Port: 13600
+[22:27:16:196648][2589739][DOCA][INF][rdma_common.c:1210][rdma_cm_connect] -- Num_connections: 1
+[22:27:16:196654][2589739][DOCA][INF][rdma_common.c:1211][rdma_cm_connect] -----------------------------------------------
+[22:27:16:196660][2589739][DOCA][INF][rdma_common.c:1219][rdma_cm_connect] Server calling doca_rdma_start_listen_to_port
+[22:27:16:196666][2589739][DOCA][INF][rdma_common.c:1220][rdma_cm_connect] rdma 的值为: 0x790390d7d010
+[22:27:16:196673][2589739][DOCA][INF][rdma_common.c:1221][rdma_cm_connect] cm_port 的值为: 13600
+[22:27:16:196719][2589739][DOCA][INF][rdma_common.c:1251][rdma_cm_connect] [Server] started connection successfully
+[22:27:16:196725][2589739][DOCA][INF][rdma_write_responder_sample.c:347][rdma_write_responder_state_change_callback] RDMA context finished initialization
+[22:27:16:196732][2589739][DOCA][INF][rdma_write_responder_sample.c:456][rdma_write_responder] remote_mmap_descriptor= (nil) remote_mmap=(nil)
+[22:27:16:309563][2589739][DOCA][DBG][linux_devx_obj.cpp:80][priv_doca_devx_object] DEVX obj 0x3ae71e40 created (m_devx_object=0x3ae83010)
+[22:27:16:310329][2589739][DOCA][DBG][doca_qp.cpp:1097][set_state] QP 0x3ae6fb40: State is already INIT
+[22:27:16:310372][2589739][DOCA][INF][doca_qp.cpp:1128][priv_doca_dev_qp_create] Device 0x3ae58090: qp=0x3ae6fb40 was created
+[22:27:16:310711][2589739][DOCA][INF][doca_rdma.cpp:570][doca_rdma_addr_create] RDMA address 0x3ae72420: Connection was set to Address (IPv4): 192.168.200.1 and Port 46256
+[22:27:16:310747][2589739][DOCA][INF][rdma_common.c:1573][rdma_cm_connect_request_cb] RDMA 连接请求被收到
+[22:27:16:316516][2589739][DOCA][INF][doca_qp.cpp:1090][set_state] QP 0x3ae6fb40: State change INIT -> CONNECTED
+[22:27:16:416638][2589739][DOCA][INF][rdma_common.c:1406][rdma_responder_send_data_to_rdma_requester] Start to exchange data resource between client and server
+[22:27:16:416725][2589739][DOCA][INF][doca_buf_inventory.cpp:238][expand_imp] Buf inventory 0x3ae9b880: Expanded by 16 elements (num free elements=16, num elements=16)
+[22:27:16:416758][2589739][DOCA][INF][doca_buf_inventory.cpp:256][doca_buf_inventory] DOCA buf inventory 0x3ae9b880 was created
+[22:27:16:416787][2589739][DOCA][INF][doca_buf_inventory.cpp:418][start] Buf inventory 0x3ae9b880: was started (num_elements=16)
+[22:27:16:416816][2589739][DOCA][INF][doca_mmap.cpp:695][doca_mmap_create] Mmap 0x3ae9ef80 was created, access_mask=0x1
+[22:27:16:416845][2589739][DOCA][INF][doca_mmap.cpp:2271][doca_mmap_set_permissions] Mmap 0x3ae9ef80: Set permissions with access_mask=0x1
+[22:27:16:416872][2589739][DOCA][INF][doca_mmap.cpp:2036][mmap_set_memrange] Mmap 0x3ae9ef80: Set memrange addr=0x3ae70c40, len=128
+[22:27:16:416903][2589739][DOCA][DBG][doca_mmap.cpp:1010][mmap_add_dev] Mmap 0x3ae9ef80: Added device=0x3ae58090 to mmap. curr_device_num=1
+[22:27:16:417897][2589739][DOCA][DBG][linux_devx_obj.cpp:80][priv_doca_devx_object] DEVX obj 0x3ae9b390 created (m_devx_object=0x3ae9b460)
+[22:27:16:417942][2589739][DOCA][INF][doca_mmap.cpp:893][doca_mmap_start] Mmap 0x3ae9ef80: mmap was started
+[22:27:16:417971][2589739][DOCA][INF][rdma_common.c:1463][rdma_responder_send_data_to_rdma_requester] Wait till the requester has finished the submission of the receive task for negotiation and press enter
+[22:27:16:417999][2589739][DOCA][INF][rdma_common.c:1468][rdma_responder_send_data_to_rdma_requester] [等待元数据交换控制信息耗时：] 用时: 0.01 ms
+[22:27:16:418102][2589739][DOCA][INF][rdma_write_responder_sample.c:220][responder_wait_for_requester_finish_chunked] 开始接收分块数据
+[22:27:16:418116][2589739][DOCA][INF][rdma_write_responder_sample.c:232][responder_wait_for_requester_finish_chunked] 等待第 1 块数据
+[22:27:16:498845][2589739][DOCA][INF][rdma_write_responder_sample.c:236][responder_wait_for_requester_finish_chunked] [等待 块数据 耗时  ] 用时: 80.72 ms
+[22:27:16:498945][2589739][DOCA][INF][rdma_write_responder_sample.c:237][responder_wait_for_requester_finish_chunked] 收到写完成信号
+[22:27:16:498964][2589739][DOCA][INF][rdma_write_responder_sample.c:244][responder_wait_for_requester_finish_chunked] 接收到块 1/1，数据大小: 102540417，总数据: 102540417，是否最后: 1
+[22:27:16:498979][2589739][DOCA][INF][rdma_write_responder_sample.c:252][responder_wait_for_requester_finish_chunked] 预计接收 1 块，总大小 102540417 字节
+[22:27:16:607398][2589739][DOCA][INF][rdma_write_responder_sample.c:270][responder_wait_for_requester_finish_chunked] [读取 块数据 耗时  ] 用时: 108.43 ms
+[22:27:16:607436][2589739][DOCA][INF][rdma_write_responder_sample.c:271][responder_wait_for_requester_finish_chunked] 已接收 1/1 块，累计数据: 102540417 字节
+[22:27:16:607476][2589739][DOCA][INF][rdma_write_responder_sample.c:277][responder_wait_for_requester_finish_chunked] 已发送第 1 块的 ACK
+[22:27:16:607482][2589739][DOCA][INF][rdma_write_responder_sample.c:281][responder_wait_for_requester_finish_chunked] 接收完成，总共 1 块，102540417 字节
+[22:27:16:607486][2589739][DOCA][INF][rdma_write_responder_sample.c:286][responder_wait_for_requester_finish_chunked] [分块接收总耗时    ] 用时: 189.37 ms
+[22:27:16:607502][2589739][DOCA][INF][rdma_write_responder_sample.c:290][responder_wait_for_requester_finish_chunked] ✓ 数据接收完整: 102540417 字节
+[22:27:16:607506][2589739][DOCA][INF][rdma_write_responder_sample.c:299][responder_wait_for_requester_finish_chunked] 最终接收数据大小: 102540417
+[22:27:16:608008][2589739][DOCA][DBG][doca_qp.cpp:1097][set_state] QP 0x3ae6fb40: State is already CONNECTED
+[22:27:16:610024][2589739][DOCA][INF][doca_qp.cpp:1090][set_state] QP 0x3ae6fb40: State change CONNECTED -> INIT
+[22:27:16:610068][2589739][DOCA][DBG][doca_qp.cpp:1097][set_state] QP 0x3ae6fb40: State is already INIT
+[22:27:16:610102][2589739][DOCA][INF][doca_rdma.cpp:601][doca_rdma_addr_destroy] RDMA address 0x3ae72420: RDMA address was destroyed
+[22:27:16:610752][2589739][DOCA][INF][doca_qp.cpp:1141][priv_doca_dev_qp_destroy] Destroying qp=0x3ae6fb40
+[22:27:16:612614][2589739][DOCA][INF][rdma_common.c:1269][rdma_cm_disconnect] [Server] successfully disconnect rdma-cm connection
+[22:27:16:612636][2589739][DOCA][INF][doca_ctx.cpp:85][ctx_pe_stop] CTX 0x790390d7d010: Can't immediately stop from a context of a callback
+[22:27:16:612655][2589739][DOCA][INF][rdma_write_responder_sample.c:362][rdma_write_responder_state_change_callback] RDMA context entered into stopping state. Any inflight tasks will be flushed
+[22:27:16:612665][2589739][DOCA][INF][rdma_ctx_cpu.cpp:1441][priv_doca_rdma_ctx_progress_stopping] num in-flight tasks has reached 0, RDMA can be stopped
+[22:27:16:612937][2589739][DOCA][INF][task_pool.cpp:54][priv_doca_task_pool_destroy] task_pool 0x3ae6fb60 was destroyed
+[22:27:16:612958][2589739][DOCA][INF][task_pool.cpp:54][priv_doca_task_pool_destroy] task_pool 0x3ae6b8d0 was destroyed
+[22:27:16:612974][2589739][DOCA][INF][task_pool.cpp:54][priv_doca_task_pool_destroy] task_pool 0x3ae6fc20 was destroyed
+[22:27:16:612989][2589739][DOCA][INF][task_pool.cpp:54][priv_doca_task_pool_destroy] task_pool 0x3ae6ff20 was destroyed
+[22:27:16:613004][2589739][DOCA][INF][task_pool.cpp:54][priv_doca_task_pool_destroy] task_pool 0x3ae716c0 was destroyed
+[22:27:16:613018][2589739][DOCA][INF][task_pool.cpp:54][priv_doca_task_pool_destroy] task_pool 0x3ae71760 was destroyed
+[22:27:16:613033][2589739][DOCA][INF][task_pool.cpp:54][priv_doca_task_pool_destroy] task_pool 0x3ae71800 was destroyed
+[22:27:16:613047][2589739][DOCA][INF][task_pool.cpp:54][priv_doca_task_pool_destroy] task_pool 0x3ae718a0 was destroyed
+[22:27:16:613061][2589739][DOCA][INF][task_pool.cpp:54][priv_doca_task_pool_destroy] task_pool 0x3ae71940 was destroyed
+[22:27:16:613076][2589739][DOCA][INF][task_pool.cpp:54][priv_doca_task_pool_destroy] task_pool 0x3ae719e0 was destroyed
+[22:27:16:613090][2589739][DOCA][INF][task_pool.cpp:54][priv_doca_task_pool_destroy] task_pool 0x3ae71a80 was destroyed
+[22:27:16:613126][2589739][DOCA][INF][doca_pe.cpp:693][priv_doca_pe_cq_unregister] Progress engine 0x3ae70500: cq=0x3ae71d40 was unregistered from pe
+[22:27:16:613845][2589739][DOCA][INF][rdma_write_responder_sample.c:365][rdma_write_responder_state_change_callback] RDMA context has been stopped
+[22:27:16:613855][2589739][DOCA][INF][doca_ctx.cpp:650][priv_doca_ctx_set_state_to_idle] CTX 0x790390d7d010 has successfully stopped
+[22:27:16:635064][2589739][DOCA][INF][doca_buf_inventory.cpp:435][stop] Buf inventory 0x3ae9b880: was stopped
+[22:27:16:635115][2589739][DOCA][INF][doca_mmap.cpp:713][doca_mmap_destroy] Mmap 0x3ae9ef80: Destroying mmap
+[22:27:16:635708][2589739][DOCA][INF][doca_mmap.cpp:668][mmap_stop] Mmap 0x3ae9ef80: mmap was stopped
+[22:27:16:635732][2589739][DOCA][INF][doca_pe.cpp:115][priv_doca_pe_ctx_destroy] Destroying progress engine ctx=0x790390d7d010
+[22:27:16:635749][2589739][DOCA][INF][doca_rdma.cpp:307][doca_rdma_destroy] RDMA 0x790390d7d010: RDMA was destroyed
+[22:27:16:635784][2589739][DOCA][INF][doca_pe.cpp:61][doca_pe_destroy] Progress engine 0x3ae70500: Destroying progress engine
+[22:27:16:635810][2589739][DOCA][INF][doca_pe.cpp:1263][destroy] Progress engine 0x3ae70500 was destroyed
+[22:27:16:641844][2589740][DOCA][INF][doca_dev.cpp:618][doca_devinfo_create_list] Devinfo list 0x28f5a3c8: Added device=0x28f43090 to devinfo list
+[22:27:16:641877][2589740][DOCA][INF][doca_dev.cpp:618][doca_devinfo_create_list] Devinfo list 0x28f5a3c8: Added device=0x28f5a540 to devinfo list
+[22:27:16:641884][2589740][DOCA][INF][doca_dev.cpp:627][doca_devinfo_create_list] Devinfo list 0x28f5a3c8 was created
+[22:27:16:642472][2589739][DOCA][INF][doca_mmap.cpp:668][mmap_stop] Mmap 0x3ae6f940: mmap was stopped
+[22:27:16:648704][2589740][DOCA][INF][doca_dev.cpp:997][doca_dev_open] Local device 0x28f43090 was opened
+[22:27:16:648734][2589740][DOCA][INF][doca_dev.cpp:143][dev_put] Device 0x28f5a540 was destroyed
+[22:27:16:648747][2589740][DOCA][INF][doca_dev.cpp:708][doca_devinfo_destroy_list] Devinfo list 0x28f5a3c8 was destroyed
+[22:27:16:648767][2589740][DOCA][INF][doca_mmap.cpp:695][doca_mmap_create] Mmap 0x28f5a940 was created, access_mask=0x1
+[22:27:16:648775][2589740][DOCA][INF][doca_mmap.cpp:2271][doca_mmap_set_permissions] Mmap 0x28f5a940: Set permissions with access_mask=0x5
+[22:27:16:648783][2589740][DOCA][WRN][doca_mmap.cpp:2026][mmap_set_memrange] Mmap 0x28f5a940: Memory range isn't aligned to 64B - addr=0x7ae2921fe010. For best performance using CPU memory, align address to 64B (cache-line size). For best performance using GPU memory, align address to 64KB (page size)
+[22:27:16:648790][2589740][DOCA][INF][doca_mmap.cpp:2036][mmap_set_memrange] Mmap 0x28f5a940: Set memrange addr=0x7ae2921fe010, len=104857600
+[22:27:16:648799][2589740][DOCA][DBG][doca_mmap.cpp:1010][mmap_add_dev] Mmap 0x28f5a940: Added device=0x28f43090 to mmap. curr_device_num=1
+[22:27:16:657651][2589739][DOCA][INF][doca_mmap.cpp:713][doca_mmap_destroy] Mmap 0x3ae6f940: Destroying mmap
+[22:27:16:659812][2589739][DOCA][INF][doca_dev.cpp:143][dev_put] Device 0x3ae58090 was destroyed
+[22:27:16:659840][2589739][DOCA][INF][doca_dev.cpp:1012][doca_dev_close] Local device 0x3ae58090 was closed
+[22:27:16:659877][2589739][DOCA][ERR][doca_argp.cpp:2532][doca_argp_destroy] Module is not ready for use
+[22:27:16:659893][2589739][DOCA][INF][rdma_write_responder_my.c:151][rdma_write_responder_my] Sample finished successfully
+[22:27:16:693696][2589740][DOCA][DBG][linux_devx_obj.cpp:80][priv_doca_devx_object] DEVX obj 0x28f5a3c0 created (m_devx_object=0x28f5aae0)
+[22:27:16:693813][2589740][DOCA][INF][doca_mmap.cpp:893][doca_mmap_start] Mmap 0x28f5a940: mmap was started
+[22:27:16:693851][2589740][DOCA][INF][doca_pe.cpp:47][doca_pe_create] Progress engine 0x28f5b500 was created
+[22:27:16:696593][2589740][DOCA][DBG][priv_doca_rdma.cpp:356][priv_doca_rdma_get_max_send_data_segs] devinfo 0x28f430f0: max_send_data_segs=64 for transport_type=RC
+[22:27:16:697764][2589740][DOCA][DBG][priv_doca_rdma.cpp:356][priv_doca_rdma_get_max_send_data_segs] devinfo 0x28f430f0: max_send_data_segs=16 for transport_type=DC
+[22:27:16:698952][2589740][DOCA][DBG][priv_doca_rdma.cpp:315][priv_doca_rdma_get_max_recv_data_segs] devinfo 0x28f430f0: max_recv_data_segs=32
+[22:27:16:702497][2589740][DOCA][INF][doca_rdma.cpp:262][doca_rdma_create] RDMA=0x7ae29217d010 was created, dev=0x28f43090
+[22:27:16:702551][2589740][DOCA][INF][doca_rdma.cpp:1693][doca_rdma_set_permissions] RDMA 0x7ae29217d010: permissions were set to 0x5
+[22:27:16:702568][2589740][DOCA][INF][doca_rdma.cpp:1850][doca_rdma_set_max_num_connections] RDMA 0x7ae29217d010: maximum number of connections was set to 1
+[22:27:16:703770][2589740][DOCA][DBG][doca_rdma.cpp:1443][doca_rdma_cap_transport_type_is_supported] devinfo 0x28f430f0: transport_type=RC is supported
+[22:27:16:703829][2589740][DOCA][INF][doca_rdma.cpp:1593][doca_rdma_set_transport_type] RDMA 0x7ae29217d010: transport_type was set to RC
+Server waiting for client connection on port 18602...
+Client connected from 192.168.200.1:41712
+TCP_NODELAY is enabled
+[22:27:16:703851][2589740][DOCA][INF][rdma_common.c:1748][config_rdma_cm_callback_and_negotiation_task] 成功执行到这里，config_rdma_cm_callback_and_negotiation_task
+[22:27:16:703875][2589740][DOCA][INF][rdma_tasks.cpp:181][priv_set_task_conf] RDMA 0x7ae29217d010: task_send_task number of tasks was set to 1
+[22:27:16:703909][2589740][DOCA][INF][doca_rdma.cpp:2276][doca_rdma_set_connection_state_callbacks] RDMA 0x7ae29217d010: Connection callbacks were set
+[22:27:16:704234][2589740][DOCA][INF][task_pool.cpp:34][priv_doca_task_pool_create] task_pool 0x28f5ab60 was created
+[22:27:16:704260][2589740][DOCA][INF][task_pool.cpp:34][priv_doca_task_pool_create] task_pool 0x28f568d0 was created
+[22:27:16:704276][2589740][DOCA][INF][task_pool.cpp:34][priv_doca_task_pool_create] task_pool 0x28f5ac20 was created
+[22:27:16:704292][2589740][DOCA][INF][task_pool.cpp:34][priv_doca_task_pool_create] task_pool 0x28f5af20 was created
+[22:27:16:704308][2589740][DOCA][INF][task_pool.cpp:34][priv_doca_task_pool_create] task_pool 0x28f5c6c0 was created
+[22:27:16:704323][2589740][DOCA][INF][task_pool.cpp:34][priv_doca_task_pool_create] task_pool 0x28f5c760 was created
+[22:27:16:704339][2589740][DOCA][INF][task_pool.cpp:34][priv_doca_task_pool_create] task_pool 0x28f5c800 was created
+[22:27:16:704354][2589740][DOCA][INF][task_pool.cpp:34][priv_doca_task_pool_create] task_pool 0x28f5c8a0 was created
+[22:27:16:704372][2589740][DOCA][INF][task_pool.cpp:34][priv_doca_task_pool_create] task_pool 0x28f5c940 was created
+[22:27:16:704388][2589740][DOCA][INF][task_pool.cpp:34][priv_doca_task_pool_create] task_pool 0x28f5c9e0 was created
+[22:27:16:704404][2589740][DOCA][INF][task_pool.cpp:34][priv_doca_task_pool_create] task_pool 0x28f5ca80 was created
+[22:27:16:704782][2589740][DOCA][INF][doca_uar.cpp:232][bridge_init] UAR 0x28f5cb40 created: page=0x7ae319e63000, reg_addr=0x7ae319e63800, base_addr=0x7ae319e63000, id=130, alloc_type=BLUEFLAME
+[22:27:16:705946][2589740][DOCA][DBG][linux_devx_obj.cpp:80][priv_doca_devx_object] DEVX obj 0x28f5adb0 created (m_devx_object=0x28f5abc0)
+[22:27:16:706002][2589740][DOCA][INF][doca_pe.cpp:665][priv_doca_pe_cq_register] Progress engine 0x28f5b500: cq=0x28f5cd40 was registered to pe
+[22:27:16:706023][2589740][DOCA][INF][rdma_write_responder_sample.c:339][rdma_write_responder_state_change_callback] RDMA context is running
+[22:27:16:706032][2589740][DOCA][INF][rdma_common.c:1184][rdma_cm_connect] Using RDMA_CM to setup RDMA connection
+[22:27:16:706039][2589740][DOCA][INF][rdma_common.c:1204][rdma_cm_connect] -----------------------------------------------
+[22:27:16:706046][2589740][DOCA][INF][rdma_common.c:1205][rdma_cm_connect] RDMA_CM connection params:
+[22:27:16:706053][2589740][DOCA][INF][rdma_common.c:1206][rdma_cm_connect] -- Connection Role: Server
+[22:27:16:706060][2589740][DOCA][INF][rdma_common.c:1207][rdma_cm_connect] -- Addr_type : 0
+[22:27:16:706067][2589740][DOCA][INF][rdma_common.c:1208][rdma_cm_connect] -- Addr: NULL
+[22:27:16:706074][2589740][DOCA][INF][rdma_common.c:1209][rdma_cm_connect] -- Port: 13620
+[22:27:16:706081][2589740][DOCA][INF][rdma_common.c:1210][rdma_cm_connect] -- Num_connections: 1
+[22:27:16:706088][2589740][DOCA][INF][rdma_common.c:1211][rdma_cm_connect] -----------------------------------------------
+[22:27:16:706094][2589740][DOCA][INF][rdma_common.c:1219][rdma_cm_connect] Server calling doca_rdma_start_listen_to_port
+[22:27:16:706101][2589740][DOCA][INF][rdma_common.c:1220][rdma_cm_connect] rdma 的值为: 0x7ae29217d010
+[22:27:16:706108][2589740][DOCA][INF][rdma_common.c:1221][rdma_cm_connect] cm_port 的值为: 13620
+[22:27:16:706161][2589740][DOCA][INF][rdma_common.c:1251][rdma_cm_connect] [Server] started connection successfully
+[22:27:16:706170][2589740][DOCA][INF][rdma_write_responder_sample.c:347][rdma_write_responder_state_change_callback] RDMA context finished initialization
+[22:27:16:706178][2589740][DOCA][INF][rdma_write_responder_sample.c:456][rdma_write_responder] remote_mmap_descriptor= (nil) remote_mmap=(nil)
+[22:27:16:818819][2589740][DOCA][DBG][linux_devx_obj.cpp:80][priv_doca_devx_object] DEVX obj 0x28f5ce40 created (m_devx_object=0x28f6e010)
+[22:27:16:819600][2589740][DOCA][DBG][doca_qp.cpp:1097][set_state] QP 0x28f5ab40: State is already INIT
+[22:27:16:819660][2589740][DOCA][INF][doca_qp.cpp:1128][priv_doca_dev_qp_create] Device 0x28f43090: qp=0x28f5ab40 was created
+[22:27:16:820014][2589740][DOCA][INF][doca_rdma.cpp:570][doca_rdma_addr_create] RDMA address 0x28f5d420: Connection was set to Address (IPv4): 192.168.200.1 and Port 51901
+[22:27:16:820055][2589740][DOCA][INF][rdma_common.c:1573][rdma_cm_connect_request_cb] RDMA 连接请求被收到
+[22:27:16:826169][2589740][DOCA][INF][doca_qp.cpp:1090][set_state] QP 0x28f5ab40: State change INIT -> CONNECTED
+[22:27:16:926297][2589740][DOCA][INF][rdma_common.c:1406][rdma_responder_send_data_to_rdma_requester] Start to exchange data resource between client and server
+[22:27:16:926431][2589740][DOCA][INF][doca_buf_inventory.cpp:238][expand_imp] Buf inventory 0x28f86880: Expanded by 16 elements (num free elements=16, num elements=16)
+[22:27:16:926472][2589740][DOCA][INF][doca_buf_inventory.cpp:256][doca_buf_inventory] DOCA buf inventory 0x28f86880 was created
+[22:27:16:926502][2589740][DOCA][INF][doca_buf_inventory.cpp:418][start] Buf inventory 0x28f86880: was started (num_elements=16)
+[22:27:16:926533][2589740][DOCA][INF][doca_mmap.cpp:695][doca_mmap_create] Mmap 0x28f89f80 was created, access_mask=0x1
+[22:27:16:926560][2589740][DOCA][INF][doca_mmap.cpp:2271][doca_mmap_set_permissions] Mmap 0x28f89f80: Set permissions with access_mask=0x1
+[22:27:16:926588][2589740][DOCA][INF][doca_mmap.cpp:2036][mmap_set_memrange] Mmap 0x28f89f80: Set memrange addr=0x28f5bc40, len=128
+[22:27:16:926620][2589740][DOCA][DBG][doca_mmap.cpp:1010][mmap_add_dev] Mmap 0x28f89f80: Added device=0x28f43090 to mmap. curr_device_num=1
+[22:27:16:927647][2589740][DOCA][DBG][linux_devx_obj.cpp:80][priv_doca_devx_object] DEVX obj 0x28f86390 created (m_devx_object=0x28f86460)
+[22:27:16:927689][2589740][DOCA][INF][doca_mmap.cpp:893][doca_mmap_start] Mmap 0x28f89f80: mmap was started
+[22:27:16:927715][2589740][DOCA][INF][rdma_common.c:1463][rdma_responder_send_data_to_rdma_requester] Wait till the requester has finished the submission of the receive task for negotiation and press enter
+[22:27:16:927741][2589740][DOCA][INF][rdma_common.c:1468][rdma_responder_send_data_to_rdma_requester] [等待元数据交换控制信息耗时：] 用时: 0.01 ms
+[22:27:16:927845][2589740][DOCA][INF][rdma_write_responder_sample.c:220][responder_wait_for_requester_finish_chunked] 开始接收分块数据
+[22:27:16:927859][2589740][DOCA][INF][rdma_write_responder_sample.c:232][responder_wait_for_requester_finish_chunked] 等待第 1 块数据
+[22:27:16:969748][2589740][DOCA][INF][rdma_write_responder_sample.c:236][responder_wait_for_requester_finish_chunked] [等待 块数据 耗时  ] 用时: 41.87 ms
+[22:27:16:969828][2589740][DOCA][INF][rdma_write_responder_sample.c:237][responder_wait_for_requester_finish_chunked] 收到写完成信号
+[22:27:16:969845][2589740][DOCA][INF][rdma_write_responder_sample.c:244][responder_wait_for_requester_finish_chunked] 接收到块 1/1，数据大小: 46830571，总数据: 46830571，是否最后: 1
+[22:27:16:969858][2589740][DOCA][INF][rdma_write_responder_sample.c:252][responder_wait_for_requester_finish_chunked] 预计接收 1 块，总大小 46830571 字节
+[22:27:17:031276][2589740][DOCA][INF][rdma_write_responder_sample.c:270][responder_wait_for_requester_finish_chunked] [读取 块数据 耗时  ] 用时: 61.43 ms
+[22:27:17:031315][2589740][DOCA][INF][rdma_write_responder_sample.c:271][responder_wait_for_requester_finish_chunked] 已接收 1/1 块，累计数据: 46830571 字节
+[22:27:17:031378][2589740][DOCA][INF][rdma_write_responder_sample.c:277][responder_wait_for_requester_finish_chunked] 已发送第 1 块的 ACK
+[22:27:17:031386][2589740][DOCA][INF][rdma_write_responder_sample.c:281][responder_wait_for_requester_finish_chunked] 接收完成，总共 1 块，46830571 字节
+[22:27:17:031394][2589740][DOCA][INF][rdma_write_responder_sample.c:286][responder_wait_for_requester_finish_chunked] [分块接收总耗时    ] 用时: 103.53 ms
+[22:27:17:031403][2589740][DOCA][INF][rdma_write_responder_sample.c:290][responder_wait_for_requester_finish_chunked] ✓ 数据接收完整: 46830571 字节
+[22:27:17:031424][2589740][DOCA][INF][rdma_write_responder_sample.c:299][responder_wait_for_requester_finish_chunked] 最终接收数据大小: 46830571
+[22:27:17:031976][2589740][DOCA][DBG][doca_qp.cpp:1097][set_state] QP 0x28f5ab40: State is already CONNECTED
+[22:27:17:033851][2589740][DOCA][INF][doca_qp.cpp:1090][set_state] QP 0x28f5ab40: State change CONNECTED -> INIT
+[22:27:17:033933][2589740][DOCA][DBG][doca_qp.cpp:1097][set_state] QP 0x28f5ab40: State is already INIT
+[22:27:17:033990][2589740][DOCA][INF][doca_rdma.cpp:601][doca_rdma_addr_destroy] RDMA address 0x28f5d420: RDMA address was destroyed
+[22:27:17:034615][2589740][DOCA][INF][doca_qp.cpp:1141][priv_doca_dev_qp_destroy] Destroying qp=0x28f5ab40
+[22:27:17:036756][2589740][DOCA][INF][rdma_common.c:1269][rdma_cm_disconnect] [Server] successfully disconnect rdma-cm connection
+[22:27:17:036815][2589740][DOCA][INF][doca_ctx.cpp:85][ctx_pe_stop] CTX 0x7ae29217d010: Can't immediately stop from a context of a callback
+[22:27:17:036849][2589740][DOCA][INF][rdma_write_responder_sample.c:362][rdma_write_responder_state_change_callback] RDMA context entered into stopping state. Any inflight tasks will be flushed
+[22:27:17:036866][2589740][DOCA][INF][rdma_ctx_cpu.cpp:1441][priv_doca_rdma_ctx_progress_stopping] num in-flight tasks has reached 0, RDMA can be stopped
+[22:27:17:037332][2589740][DOCA][INF][task_pool.cpp:54][priv_doca_task_pool_destroy] task_pool 0x28f5ab60 was destroyed
+[22:27:17:037367][2589740][DOCA][INF][task_pool.cpp:54][priv_doca_task_pool_destroy] task_pool 0x28f568d0 was destroyed
+[22:27:17:037393][2589740][DOCA][INF][task_pool.cpp:54][priv_doca_task_pool_destroy] task_pool 0x28f5ac20 was destroyed
+[22:27:17:037419][2589740][DOCA][INF][task_pool.cpp:54][priv_doca_task_pool_destroy] task_pool 0x28f5af20 was destroyed
+[22:27:17:037444][2589740][DOCA][INF][task_pool.cpp:54][priv_doca_task_pool_destroy] task_pool 0x28f5c6c0 was destroyed
+[22:27:17:037470][2589740][DOCA][INF][task_pool.cpp:54][priv_doca_task_pool_destroy] task_pool 0x28f5c760 was destroyed
+[22:27:17:037496][2589740][DOCA][INF][task_pool.cpp:54][priv_doca_task_pool_destroy] task_pool 0x28f5c800 was destroyed
+[22:27:17:037521][2589740][DOCA][INF][task_pool.cpp:54][priv_doca_task_pool_destroy] task_pool 0x28f5c8a0 was destroyed
+[22:27:17:037546][2589740][DOCA][INF][task_pool.cpp:54][priv_doca_task_pool_destroy] task_pool 0x28f5c940 was destroyed
+[22:27:17:037572][2589740][DOCA][INF][task_pool.cpp:54][priv_doca_task_pool_destroy] task_pool 0x28f5c9e0 was destroyed
+[22:27:17:037597][2589740][DOCA][INF][task_pool.cpp:54][priv_doca_task_pool_destroy] task_pool 0x28f5ca80 was destroyed
+[22:27:17:037649][2589740][DOCA][INF][doca_pe.cpp:693][priv_doca_pe_cq_unregister] Progress engine 0x28f5b500: cq=0x28f5cd40 was unregistered from pe
+[22:27:17:038369][2589740][DOCA][INF][rdma_write_responder_sample.c:365][rdma_write_responder_state_change_callback] RDMA context has been stopped
+[22:27:17:038390][2589740][DOCA][INF][doca_ctx.cpp:650][priv_doca_ctx_set_state_to_idle] CTX 0x7ae29217d010 has successfully stopped
+[22:27:17:051775][2589740][DOCA][INF][doca_buf_inventory.cpp:435][stop] Buf inventory 0x28f86880: was stopped
+[22:27:17:051837][2589740][DOCA][INF][doca_mmap.cpp:713][doca_mmap_destroy] Mmap 0x28f89f80: Destroying mmap
+[22:27:17:052581][2589740][DOCA][INF][doca_mmap.cpp:668][mmap_stop] Mmap 0x28f89f80: mmap was stopped
+[22:27:17:052619][2589740][DOCA][INF][doca_pe.cpp:115][priv_doca_pe_ctx_destroy] Destroying progress engine ctx=0x7ae29217d010
+[22:27:17:052649][2589740][DOCA][INF][doca_rdma.cpp:307][doca_rdma_destroy] RDMA 0x7ae29217d010: RDMA was destroyed
+[22:27:17:052726][2589740][DOCA][INF][doca_pe.cpp:61][doca_pe_destroy] Progress engine 0x28f5b500: Destroying progress engine
+[22:27:17:052772][2589740][DOCA][INF][doca_pe.cpp:1263][destroy] Progress engine 0x28f5b500 was destroyed
+[22:27:17:058533][2589740][DOCA][INF][doca_mmap.cpp:668][mmap_stop] Mmap 0x28f5a940: mmap was stopped
+[22:27:17:072130][2589740][DOCA][INF][doca_mmap.cpp:713][doca_mmap_destroy] Mmap 0x28f5a940: Destroying mmap
+[22:27:17:074355][2589740][DOCA][INF][doca_dev.cpp:143][dev_put] Device 0x28f43090 was destroyed
+[22:27:17:074395][2589740][DOCA][INF][doca_dev.cpp:1012][doca_dev_close] Local device 0x28f43090 was closed
+[22:27:17:074444][2589740][DOCA][ERR][doca_argp.cpp:2532][doca_argp_destroy] Module is not ready for use
+[22:27:17:074467][2589740][DOCA][INF][rdma_write_responder_my.c:151][rdma_write_responder_my] Sample finished successfully
+[22:27:17:088905][2589741][DOCA][INF][doca_dev.cpp:618][doca_devinfo_create_list] Devinfo list 0x36a153c8: Added device=0x369fe090 to devinfo list
+[22:27:17:088960][2589741][DOCA][INF][doca_dev.cpp:618][doca_devinfo_create_list] Devinfo list 0x36a153c8: Added device=0x36a15540 to devinfo list
+[22:27:17:088968][2589741][DOCA][INF][doca_dev.cpp:627][doca_devinfo_create_list] Devinfo list 0x36a153c8 was created
+[22:27:17:095741][2589741][DOCA][INF][doca_dev.cpp:997][doca_dev_open] Local device 0x369fe090 was opened
+[22:27:17:095775][2589741][DOCA][INF][doca_dev.cpp:143][dev_put] Device 0x36a15540 was destroyed
+[22:27:17:095788][2589741][DOCA][INF][doca_dev.cpp:708][doca_devinfo_destroy_list] Devinfo list 0x36a153c8 was destroyed
+[22:27:17:095809][2589741][DOCA][INF][doca_mmap.cpp:695][doca_mmap_create] Mmap 0x36a15940 was created, access_mask=0x1
+[22:27:17:095817][2589741][DOCA][INF][doca_mmap.cpp:2271][doca_mmap_set_permissions] Mmap 0x36a15940: Set permissions with access_mask=0x5
+[22:27:17:095825][2589741][DOCA][WRN][doca_mmap.cpp:2026][mmap_set_memrange] Mmap 0x36a15940: Memory range isn't aligned to 64B - addr=0x7fc9f9b7b010. For best performance using CPU memory, align address to 64B (cache-line size). For best performance using GPU memory, align address to 64KB (page size)
+[22:27:17:095833][2589741][DOCA][INF][doca_mmap.cpp:2036][mmap_set_memrange] Mmap 0x36a15940: Set memrange addr=0x7fc9f9b7b010, len=209715200
+[22:27:17:095842][2589741][DOCA][DBG][doca_mmap.cpp:1010][mmap_add_dev] Mmap 0x36a15940: Added device=0x369fe090 to mmap. curr_device_num=1
+[22:27:17:185614][2589741][DOCA][DBG][linux_devx_obj.cpp:80][priv_doca_devx_object] DEVX obj 0x36a153c0 created (m_devx_object=0x36a15ae0)
+[22:27:17:185716][2589741][DOCA][INF][doca_mmap.cpp:893][doca_mmap_start] Mmap 0x36a15940: mmap was started
+[22:27:17:185743][2589741][DOCA][INF][doca_pe.cpp:47][doca_pe_create] Progress engine 0x36a16500 was created
+[22:27:17:188594][2589741][DOCA][DBG][priv_doca_rdma.cpp:356][priv_doca_rdma_get_max_send_data_segs] devinfo 0x369fe0f0: max_send_data_segs=64 for transport_type=RC
+[22:27:17:189746][2589741][DOCA][DBG][priv_doca_rdma.cpp:356][priv_doca_rdma_get_max_send_data_segs] devinfo 0x369fe0f0: max_send_data_segs=16 for transport_type=DC
+[22:27:17:190898][2589741][DOCA][DBG][priv_doca_rdma.cpp:315][priv_doca_rdma_get_max_recv_data_segs] devinfo 0x369fe0f0: max_recv_data_segs=32
+[22:27:17:194399][2589741][DOCA][INF][doca_rdma.cpp:262][doca_rdma_create] RDMA=0x7fc9f9afa010 was created, dev=0x369fe090
+[22:27:17:194451][2589741][DOCA][INF][doca_rdma.cpp:1693][doca_rdma_set_permissions] RDMA 0x7fc9f9afa010: permissions were set to 0x5
+[22:27:17:194467][2589741][DOCA][INF][doca_rdma.cpp:1850][doca_rdma_set_max_num_connections] RDMA 0x7fc9f9afa010: maximum number of connections was set to 1
+[22:27:17:195612][2589741][DOCA][DBG][doca_rdma.cpp:1443][doca_rdma_cap_transport_type_is_supported] devinfo 0x369fe0f0: transport_type=RC is supported
+[22:27:17:195666][2589741][DOCA][INF][doca_rdma.cpp:1593][doca_rdma_set_transport_type] RDMA 0x7fc9f9afa010: transport_type was set to RC
+Server waiting for client connection on port 18603...
+Client connected from 192.168.200.1:37338
+TCP_NODELAY is enabled
+[22:27:17:195687][2589741][DOCA][INF][rdma_common.c:1748][config_rdma_cm_callback_and_negotiation_task] 成功执行到这里，config_rdma_cm_callback_and_negotiation_task
+[22:27:17:195711][2589741][DOCA][INF][rdma_tasks.cpp:181][priv_set_task_conf] RDMA 0x7fc9f9afa010: task_send_task number of tasks was set to 1
+[22:27:17:195727][2589741][DOCA][INF][doca_rdma.cpp:2276][doca_rdma_set_connection_state_callbacks] RDMA 0x7fc9f9afa010: Connection callbacks were set
+[22:27:17:196060][2589741][DOCA][INF][task_pool.cpp:34][priv_doca_task_pool_create] task_pool 0x36a15b60 was created
+[22:27:17:196087][2589741][DOCA][INF][task_pool.cpp:34][priv_doca_task_pool_create] task_pool 0x36a118d0 was created
+[22:27:17:196102][2589741][DOCA][INF][task_pool.cpp:34][priv_doca_task_pool_create] task_pool 0x36a15c20 was created
+[22:27:17:196118][2589741][DOCA][INF][task_pool.cpp:34][priv_doca_task_pool_create] task_pool 0x36a15f20 was created
+[22:27:17:196131][2589741][DOCA][INF][task_pool.cpp:34][priv_doca_task_pool_create] task_pool 0x36a176c0 was created
+[22:27:17:196145][2589741][DOCA][INF][task_pool.cpp:34][priv_doca_task_pool_create] task_pool 0x36a17760 was created
+[22:27:17:196158][2589741][DOCA][INF][task_pool.cpp:34][priv_doca_task_pool_create] task_pool 0x36a17800 was created
+[22:27:17:196172][2589741][DOCA][INF][task_pool.cpp:34][priv_doca_task_pool_create] task_pool 0x36a178a0 was created
+[22:27:17:196187][2589741][DOCA][INF][task_pool.cpp:34][priv_doca_task_pool_create] task_pool 0x36a17940 was created
+[22:27:17:196201][2589741][DOCA][INF][task_pool.cpp:34][priv_doca_task_pool_create] task_pool 0x36a179e0 was created
+[22:27:17:196216][2589741][DOCA][INF][task_pool.cpp:34][priv_doca_task_pool_create] task_pool 0x36a17a80 was created
+[22:27:17:196611][2589741][DOCA][INF][doca_uar.cpp:232][bridge_init] UAR 0x36a17b40 created: page=0x7fca87bef000, reg_addr=0x7fca87bef800, base_addr=0x7fca87bef000, id=134, alloc_type=BLUEFLAME
+[22:27:17:197645][2589741][DOCA][DBG][linux_devx_obj.cpp:80][priv_doca_devx_object] DEVX obj 0x36a15db0 created (m_devx_object=0x36a15bc0)
+[22:27:17:197693][2589741][DOCA][INF][doca_pe.cpp:665][priv_doca_pe_cq_register] Progress engine 0x36a16500: cq=0x36a17d40 was registered to pe
+[22:27:17:197711][2589741][DOCA][INF][rdma_write_responder_sample.c:339][rdma_write_responder_state_change_callback] RDMA context is running
+[22:27:17:197720][2589741][DOCA][INF][rdma_common.c:1184][rdma_cm_connect] Using RDMA_CM to setup RDMA connection
+[22:27:17:197727][2589741][DOCA][INF][rdma_common.c:1204][rdma_cm_connect] -----------------------------------------------
+[22:27:17:197734][2589741][DOCA][INF][rdma_common.c:1205][rdma_cm_connect] RDMA_CM connection params:
+[22:27:17:197740][2589741][DOCA][INF][rdma_common.c:1206][rdma_cm_connect] -- Connection Role: Server
+[22:27:17:197747][2589741][DOCA][INF][rdma_common.c:1207][rdma_cm_connect] -- Addr_type : 0
+[22:27:17:197754][2589741][DOCA][INF][rdma_common.c:1208][rdma_cm_connect] -- Addr: NULL
+[22:27:17:197760][2589741][DOCA][INF][rdma_common.c:1209][rdma_cm_connect] -- Port: 13640
+[22:27:17:197766][2589741][DOCA][INF][rdma_common.c:1210][rdma_cm_connect] -- Num_connections: 1
+[22:27:17:197772][2589741][DOCA][INF][rdma_common.c:1211][rdma_cm_connect] -----------------------------------------------
+[22:27:17:197779][2589741][DOCA][INF][rdma_common.c:1219][rdma_cm_connect] Server calling doca_rdma_start_listen_to_port
+[22:27:17:197786][2589741][DOCA][INF][rdma_common.c:1220][rdma_cm_connect] rdma 的值为: 0x7fc9f9afa010
+[22:27:17:197792][2589741][DOCA][INF][rdma_common.c:1221][rdma_cm_connect] cm_port 的值为: 13640
+[22:27:17:197846][2589741][DOCA][INF][rdma_common.c:1251][rdma_cm_connect] [Server] started connection successfully
+[22:27:17:197854][2589741][DOCA][INF][rdma_write_responder_sample.c:347][rdma_write_responder_state_change_callback] RDMA context finished initialization
+[22:27:17:197861][2589741][DOCA][INF][rdma_write_responder_sample.c:456][rdma_write_responder] remote_mmap_descriptor= (nil) remote_mmap=(nil)
+[22:27:17:308845][2589741][DOCA][DBG][linux_devx_obj.cpp:80][priv_doca_devx_object] DEVX obj 0x36a17e40 created (m_devx_object=0x36a29010)
+[22:27:17:309585][2589741][DOCA][DBG][doca_qp.cpp:1097][set_state] QP 0x36a15b40: State is already INIT
+[22:27:17:309607][2589741][DOCA][INF][doca_qp.cpp:1128][priv_doca_dev_qp_create] Device 0x369fe090: qp=0x36a15b40 was created
+[22:27:17:309965][2589741][DOCA][INF][doca_rdma.cpp:570][doca_rdma_addr_create] RDMA address 0x36a18420: Connection was set to Address (IPv4): 192.168.200.1 and Port 59476
+[22:27:17:310002][2589741][DOCA][INF][rdma_common.c:1573][rdma_cm_connect_request_cb] RDMA 连接请求被收到
+[22:27:17:314548][2589741][DOCA][INF][doca_qp.cpp:1090][set_state] QP 0x36a15b40: State change INIT -> CONNECTED
+[22:27:17:414650][2589741][DOCA][INF][rdma_common.c:1406][rdma_responder_send_data_to_rdma_requester] Start to exchange data resource between client and server
+[22:27:17:414708][2589741][DOCA][INF][doca_buf_inventory.cpp:238][expand_imp] Buf inventory 0x36a41880: Expanded by 16 elements (num free elements=16, num elements=16)
+[22:27:17:414727][2589741][DOCA][INF][doca_buf_inventory.cpp:256][doca_buf_inventory] DOCA buf inventory 0x36a41880 was created
+[22:27:17:414742][2589741][DOCA][INF][doca_buf_inventory.cpp:418][start] Buf inventory 0x36a41880: was started (num_elements=16)
+[22:27:17:414758][2589741][DOCA][INF][doca_mmap.cpp:695][doca_mmap_create] Mmap 0x36a44f80 was created, access_mask=0x1
+[22:27:17:414774][2589741][DOCA][INF][doca_mmap.cpp:2271][doca_mmap_set_permissions] Mmap 0x36a44f80: Set permissions with access_mask=0x1
+[22:27:17:414789][2589741][DOCA][INF][doca_mmap.cpp:2036][mmap_set_memrange] Mmap 0x36a44f80: Set memrange addr=0x36a16c40, len=128
+[22:27:17:414806][2589741][DOCA][DBG][doca_mmap.cpp:1010][mmap_add_dev] Mmap 0x36a44f80: Added device=0x369fe090 to mmap. curr_device_num=1
+[22:27:17:415851][2589741][DOCA][DBG][linux_devx_obj.cpp:80][priv_doca_devx_object] DEVX obj 0x36a41390 created (m_devx_object=0x36a41460)
+[22:27:17:415874][2589741][DOCA][INF][doca_mmap.cpp:893][doca_mmap_start] Mmap 0x36a44f80: mmap was started
+[22:27:17:415888][2589741][DOCA][INF][rdma_common.c:1463][rdma_responder_send_data_to_rdma_requester] Wait till the requester has finished the submission of the receive task for negotiation and press enter
+[22:27:17:415905][2589741][DOCA][INF][rdma_common.c:1468][rdma_responder_send_data_to_rdma_requester] [等待元数据交换控制信息耗时：] 用时: 0.01 ms
+[22:27:17:415997][2589741][DOCA][INF][rdma_write_responder_sample.c:220][responder_wait_for_requester_finish_chunked] 开始接收分块数据
+[22:27:17:416007][2589741][DOCA][INF][rdma_write_responder_sample.c:232][responder_wait_for_requester_finish_chunked] 等待第 1 块数据
+[22:27:17:495380][2589741][DOCA][INF][rdma_write_responder_sample.c:236][responder_wait_for_requester_finish_chunked] [等待 块数据 耗时  ] 用时: 79.36 ms
+[22:27:17:495458][2589741][DOCA][INF][rdma_write_responder_sample.c:237][responder_wait_for_requester_finish_chunked] 收到写完成信号
+[22:27:17:495474][2589741][DOCA][INF][rdma_write_responder_sample.c:244][responder_wait_for_requester_finish_chunked] 接收到块 1/1，数据大小: 102540417，总数据: 102540417，是否最后: 1
+[22:27:17:495488][2589741][DOCA][INF][rdma_write_responder_sample.c:252][responder_wait_for_requester_finish_chunked] 预计接收 1 块，总大小 102540417 字节
+[22:27:17:603675][2589741][DOCA][INF][rdma_write_responder_sample.c:270][responder_wait_for_requester_finish_chunked] [读取 块数据 耗时  ] 用时: 108.20 ms
+[22:27:17:603714][2589741][DOCA][INF][rdma_write_responder_sample.c:271][responder_wait_for_requester_finish_chunked] 已接收 1/1 块，累计数据: 102540417 字节
+[22:27:17:603764][2589741][DOCA][INF][rdma_write_responder_sample.c:277][responder_wait_for_requester_finish_chunked] 已发送第 1 块的 ACK
+[22:27:17:603769][2589741][DOCA][INF][rdma_write_responder_sample.c:281][responder_wait_for_requester_finish_chunked] 接收完成，总共 1 块，102540417 字节
+[22:27:17:603773][2589741][DOCA][INF][rdma_write_responder_sample.c:286][responder_wait_for_requester_finish_chunked] [分块接收总耗时    ] 用时: 187.77 ms
+[22:27:17:603778][2589741][DOCA][INF][rdma_write_responder_sample.c:290][responder_wait_for_requester_finish_chunked] ✓ 数据接收完整: 102540417 字节
+[22:27:17:603781][2589741][DOCA][INF][rdma_write_responder_sample.c:299][responder_wait_for_requester_finish_chunked] 最终接收数据大小: 102540417
+[22:27:17:604305][2589741][DOCA][DBG][doca_qp.cpp:1097][set_state] QP 0x36a15b40: State is already CONNECTED
+[22:27:17:606437][2589741][DOCA][INF][doca_qp.cpp:1090][set_state] QP 0x36a15b40: State change CONNECTED -> INIT
+[22:27:17:606483][2589741][DOCA][DBG][doca_qp.cpp:1097][set_state] QP 0x36a15b40: State is already INIT
+[22:27:17:606520][2589741][DOCA][INF][doca_rdma.cpp:601][doca_rdma_addr_destroy] RDMA address 0x36a18420: RDMA address was destroyed
+[22:27:17:607140][2589741][DOCA][INF][doca_qp.cpp:1141][priv_doca_dev_qp_destroy] Destroying qp=0x36a15b40
+[22:27:17:609141][2589741][DOCA][INF][rdma_common.c:1269][rdma_cm_disconnect] [Server] successfully disconnect rdma-cm connection
+[22:27:17:609162][2589741][DOCA][INF][doca_ctx.cpp:85][ctx_pe_stop] CTX 0x7fc9f9afa010: Can't immediately stop from a context of a callback
+[22:27:17:609183][2589741][DOCA][INF][rdma_write_responder_sample.c:362][rdma_write_responder_state_change_callback] RDMA context entered into stopping state. Any inflight tasks will be flushed
+[22:27:17:609196][2589741][DOCA][INF][rdma_ctx_cpu.cpp:1441][priv_doca_rdma_ctx_progress_stopping] num in-flight tasks has reached 0, RDMA can be stopped
+[22:27:17:609502][2589741][DOCA][INF][task_pool.cpp:54][priv_doca_task_pool_destroy] task_pool 0x36a15b60 was destroyed
+[22:27:17:609524][2589741][DOCA][INF][task_pool.cpp:54][priv_doca_task_pool_destroy] task_pool 0x36a118d0 was destroyed
+[22:27:17:609542][2589741][DOCA][INF][task_pool.cpp:54][priv_doca_task_pool_destroy] task_pool 0x36a15c20 was destroyed
+[22:27:17:609559][2589741][DOCA][INF][task_pool.cpp:54][priv_doca_task_pool_destroy] task_pool 0x36a15f20 was destroyed
+[22:27:17:609576][2589741][DOCA][INF][task_pool.cpp:54][priv_doca_task_pool_destroy] task_pool 0x36a176c0 was destroyed
+[22:27:17:609593][2589741][DOCA][INF][task_pool.cpp:54][priv_doca_task_pool_destroy] task_pool 0x36a17760 was destroyed
+[22:27:17:609610][2589741][DOCA][INF][task_pool.cpp:54][priv_doca_task_pool_destroy] task_pool 0x36a17800 was destroyed
+[22:27:17:609629][2589741][DOCA][INF][task_pool.cpp:54][priv_doca_task_pool_destroy] task_pool 0x36a178a0 was destroyed
+[22:27:17:609646][2589741][DOCA][INF][task_pool.cpp:54][priv_doca_task_pool_destroy] task_pool 0x36a17940 was destroyed
+[22:27:17:609663][2589741][DOCA][INF][task_pool.cpp:54][priv_doca_task_pool_destroy] task_pool 0x36a179e0 was destroyed
+[22:27:17:609680][2589741][DOCA][INF][task_pool.cpp:54][priv_doca_task_pool_destroy] task_pool 0x36a17a80 was destroyed
+[22:27:17:609721][2589741][DOCA][INF][doca_pe.cpp:693][priv_doca_pe_cq_unregister] Progress engine 0x36a16500: cq=0x36a17d40 was unregistered from pe
+[22:27:17:610371][2589741][DOCA][INF][rdma_write_responder_sample.c:365][rdma_write_responder_state_change_callback] RDMA context has been stopped
+[22:27:17:610385][2589741][DOCA][INF][doca_ctx.cpp:650][priv_doca_ctx_set_state_to_idle] CTX 0x7fc9f9afa010 has successfully stopped
+[22:27:17:633355][2589741][DOCA][INF][doca_buf_inventory.cpp:435][stop] Buf inventory 0x36a41880: was stopped
+[22:27:17:633411][2589741][DOCA][INF][doca_mmap.cpp:713][doca_mmap_destroy] Mmap 0x36a44f80: Destroying mmap
+[22:27:17:634151][2589741][DOCA][INF][doca_mmap.cpp:668][mmap_stop] Mmap 0x36a44f80: mmap was stopped
+[22:27:17:634179][2589741][DOCA][INF][doca_pe.cpp:115][priv_doca_pe_ctx_destroy] Destroying progress engine ctx=0x7fc9f9afa010
+[22:27:17:634199][2589741][DOCA][INF][doca_rdma.cpp:307][doca_rdma_destroy] RDMA 0x7fc9f9afa010: RDMA was destroyed
+[22:27:17:634248][2589741][DOCA][INF][doca_pe.cpp:61][doca_pe_destroy] Progress engine 0x36a16500: Destroying progress engine
+[22:27:17:634281][2589741][DOCA][INF][doca_pe.cpp:1263][destroy] Progress engine 0x36a16500 was destroyed
+[22:27:17:641939][2589741][DOCA][INF][doca_mmap.cpp:668][mmap_stop] Mmap 0x36a15940: mmap was stopped
+[22:27:17:658929][2589741][DOCA][INF][doca_mmap.cpp:713][doca_mmap_destroy] Mmap 0x36a15940: Destroying mmap
+[22:27:17:661284][2589741][DOCA][INF][doca_dev.cpp:143][dev_put] Device 0x369fe090 was destroyed
+[22:27:17:661327][2589741][DOCA][INF][doca_dev.cpp:1012][doca_dev_close] Local device 0x369fe090 was closed
+[22:27:17:661365][2589741][DOCA][ERR][doca_argp.cpp:2532][doca_argp_destroy] Module is not ready for use
+[22:27:17:661381][2589741][DOCA][INF][rdma_write_responder_my.c:151][rdma_write_responder_my] Sample finished successfully
+[Responder:13580] 接收到 46830571 字节, MD5: e0b1c919e74f9a193d36871d9964bf7d
+[Responder:13600] 接收到 102540417 字节, MD5: 012571d812f34f8442473d8b827077b5
+[Responder:13620] 接收到 46830571 字节, MD5: e0b1c919e74f9a193d36871d9964bf7d
+[Responder:13640] 接收到 102540417 字节, MD5: 012571d812f34f8442473d8b827077b5
