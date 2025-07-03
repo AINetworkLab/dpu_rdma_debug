@@ -23,12 +23,12 @@
 ├── rdma_common.h
 ├── rdma_control_enum.c
 ├── rdma_control_enum.h
-├── rdma_write_responder_my.c
-├── rdma_write_responder_sample.c
+├── rdma_write_responder_my.c # Correspond to rdma_write_responder_main.c in the sample code.
+├── rdma_write_responder_sample.c  # Correspond to rdma_write_responder_sample.c in the sample code.
 ├── responder_1.py
 ├── responder_2.py
 ├── responder_3.py
 ├── responder_4.py
-├── responder_all.sh
+├── responder_all.sh # Entry points for executing responder_1.py to responder_4.py separately.
 └── time_utils.h
 ```
