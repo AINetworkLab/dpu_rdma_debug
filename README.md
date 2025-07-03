@@ -1,4 +1,6 @@
 # dpu_rdma_debug
+
+```plaintext
 ./requester
 ├── daemon_hugepages.c # First, allocate 1GB of hugepages memory.
 ├── doca_hp_sender.py # The entry point of the .so file used by the requester to invoke RDMA.
@@ -12,3 +14,4 @@
 ├── rdma_write_requester_my.c
 ├── rdma_write_requester_sample.c
 └── time_utils.h
+```
