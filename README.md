@@ -11,7 +11,24 @@
 ├── rdma_common_pool.h
 ├── rdma_control_enum.c # Replaces the wait_for_enter() function with TCP-based management logic.
 ├── rdma_control_enum.h
-├── rdma_write_requester_my.c
-├── rdma_write_requester_sample.c
+├── rdma_write_requester_my.c # Correspond to rdma_write_requester_main.c in the sample code.
+├── rdma_write_requester_sample.c # Correspond to rdma_write_requester_sample.c in the sample code.
+└── time_utils.h
+```
+
+```plaintext
+./responder
+├── meson.build
+├── rdma_common.c
+├── rdma_common.h
+├── rdma_control_enum.c
+├── rdma_control_enum.h
+├── rdma_write_responder_my.c
+├── rdma_write_responder_sample.c
+├── responder_1.py
+├── responder_2.py
+├── responder_3.py
+├── responder_4.py
+├── responder_all.sh
 └── time_utils.h
 ```
